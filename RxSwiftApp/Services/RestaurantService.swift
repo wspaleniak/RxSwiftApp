@@ -8,12 +8,19 @@
 import Foundation
 import RxSwift
 
-final class RestaurantService {
+// MARK: - Protokół
+protocol RestaurantServiceProtocol {
+    func fetchRestaurants() -> Observable<[Restaurant]>
+}
+
+// MARK: - Service pobierający listę restauracji z pliku JSON
+// Implementuje powyższy protokół
+final class RestaurantService: RestaurantServiceProtocol {
     
+    // Metoda ta zwraca obserwowaną tablicę obiektów Restaurant
+    // Rozkodowujemy w niej JSON'a
     func fetchRestaurants() -> Observable<[Restaurant]> {
-        
         return Observable.create { observer -> Disposable in
-            
             guard let path = Bundle.main.path(forResource: "restaurants", ofType: "json") else {
                 observer.onError(NSError(domain: "Brak ścieżki", code: 100))
                 return Disposables.create {}

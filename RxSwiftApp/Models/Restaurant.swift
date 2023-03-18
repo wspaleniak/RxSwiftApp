@@ -7,6 +7,9 @@
 
 import Foundation
 
+// MARK: - Enum dla opcji cuisine
+// Musi być Codable, żeby można ją było dać jako typ zmiennej w struct Restaurant
+// Dajemy również jako String, bo będziemy używać .rawValue
 enum Cuisine: String, Codable {
     case european
     case french
@@ -15,6 +18,8 @@ enum Cuisine: String, Codable {
     case english
 }
 
+// MARK: - Struktura dla rozkodowania JSON'a
+// Musi być Codable
 struct Restaurant: Codable {
     let name: String
     let cuisine: Cuisine

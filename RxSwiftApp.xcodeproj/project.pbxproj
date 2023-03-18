@@ -19,6 +19,7 @@
 		9235B86329C5DE6900C4B0F4 /* restaurants.json in Resources */ = {isa = PBXBuildFile; fileRef = 9235B86229C5DE6900C4B0F4 /* restaurants.json */; };
 		9235B86629C5DFB900C4B0F4 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9235B86529C5DFB900C4B0F4 /* Restaurant.swift */; };
 		9235B86929C5E17B00C4B0F4 /* RestaurantService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9235B86829C5E17B00C4B0F4 /* RestaurantService.swift */; };
+		92D27F8329C5EF5C00451833 /* RestaurantViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D27F8229C5EF5C00451833 /* RestaurantViewModel.swift */; };
 		F0B70BE401EA9A598E109AC4 /* Pods_RxSwiftApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B233A4E434BD582C78DC11B /* Pods_RxSwiftApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -40,6 +41,7 @@
 		9235B86229C5DE6900C4B0F4 /* restaurants.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = restaurants.json; sourceTree = "<group>"; };
 		9235B86529C5DFB900C4B0F4 /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
 		9235B86829C5E17B00C4B0F4 /* RestaurantService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantService.swift; sourceTree = "<group>"; };
+		92D27F8229C5EF5C00451833 /* RestaurantViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +122,7 @@
 			isa = PBXGroup;
 			children = (
 				9235B86029C53F6800C4B0F4 /* ViewModel.swift */,
+				92D27F8229C5EF5C00451833 /* RestaurantViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -285,6 +288,7 @@
 				9235B85F29C53DD900C4B0F4 /* UIViewController+Ex.swift in Sources */,
 				9206DCEB29C5341600D9F3D8 /* ViewController.swift in Sources */,
 				9235B86629C5DFB900C4B0F4 /* Restaurant.swift in Sources */,
+				92D27F8329C5EF5C00451833 /* RestaurantViewModel.swift in Sources */,
 				9235B86929C5E17B00C4B0F4 /* RestaurantService.swift in Sources */,
 				9206DCE729C5341600D9F3D8 /* AppDelegate.swift in Sources */,
 				9235B86129C53F6800C4B0F4 /* ViewModel.swift in Sources */,
